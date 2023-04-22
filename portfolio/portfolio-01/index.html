@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Imbue&family=Righteous&family=Yellowtail&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="#CaminhoDoReset.css">
+    <link rel="stylesheet" href="#CaminhoDoStyle.css">
+    <link rel="stylesheet" href="#CaminhoDoProfile.css">
+
+    <script src="#CaminhoDoSkill.js"></script>
+    <script src="#CaminhoDaUniversidade.js"></script>
+    <script src="#CaminhoDoExp.js"></script>
+
+    <title>Portfolio</title>
+  </head>
+
+  <body>
+    <main>
+        <div class="card open type">
+            <div class="card-top">
+                <div class="details">
+                    <h2 class="name">Seu Nome</h2>
+                    <p>XX anos</p>
+                </div>
+                <div class="span-div">
+                    <span class="type" id="javaType">Java</span>
+                    <span class="type" id="CsharpType">C#</span>
+                    <span class="type" id="htmlType">HTML</span>
+                    <span class="type" id="cssType">CSS</span>
+                    <span class="type" id="javascriptType">JavaScript</span>
+                    <span class="type" id="sqlType">SQL</span>
+                    <span class="type" id="kotlinType">Kotlin</span>
+                    <span class="type" id="flutterType">Flutter</span>
+                </div>
+
+                <div class="div-info">
+                    <div class="card-img">
+                        <img src="#CaminhoDaImagem" alt="Sua Foto" />
+                    </div>
+
+                    <div class="skills">
+                        <h3 class="class-h3">Skills</h3>
+                        <div class="contender-slider">
+                            <ul class="lista-skills">
+                                <li class="lista skills-1 ">
+                                    <div class="barchart-bar">
+                                        <div class="barchart-rank-1" style="width: 52.00%;" id="java"><p>Java</p></div>
+                                    </div>
+                                    <div class="barchart-bar">
+                                        <div class="barchart-rank-1" style="width: 51.00%;" id="Csharp"><p>C#</p></div>
+                                    </div>
+                                    <div class="barchart-bar">
+                                        <div class="barchart-rank-1" style="width: 50.00%;" id="html"><p>HTML</p></div>
+                                    </div>
+                                    <div class="barchart-bar">
+                                        <div class="barchart-rank-1" style="width: 35.00%;" id="css"><p>CSS</p></div>
+                                    </div>
+                                    <div class="barchart-bar">
+                                        <div class="barchart-rank-1" style="width: 30.00%;" id="javascript"><p>JS</p></div>
+                                    </div>
+                                    <div class="barchart-bar">
+                                        <div class="barchart-rank-1" style="width: 15.00%;" id="sql"><p>SQL</p></div>
+                                    </div>
+                                </li>
+
+                                <li class="lista skills-2 ">
+                                    <div class="barchart-bar">
+                                        <div class="barchart-rank-1" style="width: 32.00%;" id="kotlin"><p>Kotlin</p></div>
+                                    </div>
+                                    <div class="barchart-bar">
+                                        <div class="barchart-rank-1" style="width: 27.00%;" id="flutter"><p>Flutter</p></div>
+                                    </div>
+                                </li>
+                            </ul>
+                            
+                            <div class="space-button">
+                                <button class="btn-seta btn-voltar space-buttonL" id="btt-voltar" title="voltar"></button>
+                                <button class="btn-seta space-buttonR" id="btt-avancar" title="avancar"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="card-info">
+                    <div class="stats">
+
+                        <h3>Experiência</h3>
+                        <ul class="lista-experiencia">
+                            <li class="lista exp-1 ">
+                                <br>
+                                <div class="title-experiencia">
+                                    <p class="glow-on-hover"></p><p class="experiencia">Experiência 1</p>
+                                </div>
+                                <p class="info-experiencia">Empresa 1 · <span>(Data Início - Data Fim)</span></p>
+                                <p class="sobre-experiencia">Sobre 1.</p>
+                                <p class="sobre-experiencia">Sobre 2.</p>
+                                <p class="sobre-experiencia">Sobre 3.</p>
+                                    <br>
+                            </li>
+
+                            <li class="lista exp-2 ">
+                                <br>
+                                <div class="title-experiencia">
+                                    <p class="glow-on-hover"></p><p class="experiencia">Experiência 2</p>
+                                </div>
+                                <p class="info-experiencia">Empresa 2 · <span>(Data Início - Data Fim)</span></p>
+                                <p class="sobre-experiencia">Sobre 1.</p>
+                                <p class="sobre-experiencia">Sobre 2.</p>
+                                <p class="sobre-experiencia">Sobre 3.</p>
+                                    <br>
+                            </li>
+                        </ul>
+                        <div class="space-button">
+                            <button class="btn-seta btn-voltar space-buttonL" id="btt-voltar-exp" title="voltar"></button>
+                            <button class="btn-seta space-buttonR" id="btt-avancar-exp" title="avancar"></button>
+                        </div>
+
+                        <h3>Formação Academica</h3>
+                        <ul class="lista-universidade">
+                            <li class="lista univer-1 ">
+                                <br>
+                                <div class="title-universidade">
+                                    <p class="glow-on-hover"></p><p class="universidade">Universidade 1</p>
+                                </div>
+                                <p class="info-universidade">Graduação = Bacharelado, Nome do curso · <span>(Data Início - Data Fim)</span></p>
+
+                                <div class="title-universidade">
+                                    <p class="glow-on-hover"></p><p class="universidade">Universidade 2</p>
+                                </div>
+                                <p class="info-universidade">Pós-graduação Lato Sensu - Especialização, Nome do curso · <span>(2020 - 2021)</span></p>
+                            </li>
+                            <li class="lista univer-2 ">
+                                <br>
+                                <div class="title-universidade">
+                                    <p class="glow-on-hover"></p><p class="universidade">Universidade 3</p>
+                                </div>
+                                <p class="info-universidade">Pós-graduação Lato Sensu - Especialização, Nome do curso · <span>(Data Início - Data Fim)</span></p>
+                                <div class="title-universidade">
+                                    <p class="glow-on-hover"></p><p class="universidade">Universidade 4</p>
+                                </div>
+                                <p class="info-universidade">Pós-graduação Lato Sensu - Especialização, Nome do curso · <span>(Data Início - Data Fim)</span></p>
+                            </li>
+                        </ul>
+                        <div class="space-button">
+                            <button class="btn-seta btn-voltar space-buttonL" id="btt-voltar-univer" title="voltar"></button>
+                            <button class="btn-seta space-buttonR" id="btt-avancar-univer" title="avancar"></button>
+                        </div>
+                    </div>
+                
+                </div>
+                <footer>
+                    <div class="portf">
+                        <a href="#Link1" id="itch" target="_blank"><img src="https://static.itch.io/images/itchio-textless-white.svg"></a>
+                        <a href="#Link2" id="linkedin" target="_blank"><img src="src/img/linkedin-logo.png"></a>
+                        <a href="#Link3" id="playstore" target="_blank"><img src="src/img/ps-logo.png"></a>
+                    </div>
+                </footer>
+            </div>
+    </main>
+  </body>
+</html>
