@@ -1,0 +1,416 @@
+.card-top {
+    padding: 20px 20px 0;
+}
+
+.name {
+    margin-bottom: 5px;
+    font-size: 38px;
+    font-family: 'Imbue', serif;
+}
+
+.details p{
+    font-family: 'Bruno Ace SC', cursive;
+}
+
+.class-h3{
+    border-bottom: 3px solid #79bfea;
+    font-family: 'Bruno Ace SC', cursive;
+}
+
+h4{
+    text-decoration: underline;
+}
+
+.stats h3{
+    font-family: 'Bruno Ace SC', cursive;
+    text-decoration: none;
+}
+
+.universidade{
+    font-size: 18px;
+    font-family: 'Bruno Ace SC', cursive;
+    margin-bottom: 5px;
+}
+
+.info-universidade{
+    font-size: 18px;
+    font-family: 'Imbue', serif;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.experiencia{
+    font-size: 18px;
+    font-family: 'Bruno Ace SC', cursive;
+    margin-bottom: 5px;
+}
+
+.title-experiencia{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+}
+
+.info-experiencia{
+    font-size: 18px;
+    font-family: 'Imbue', serif;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.sobre-experiencia{
+    font-size: 12px;
+    margin-left: 20px;
+}
+
+.glow-on-hover {
+    width: 20px;
+    height: 20px;
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: none;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(50% + 4px);
+    height: calc(50% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #fff
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background: #fff;
+    left: 0;
+    top: 0;
+    border-radius: 100px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+.title-universidade{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+}
+
+.card .type {
+    font-size: 12px;
+    background-color: #FFFFFF;
+    opacity: 0.7;
+    border-radius: 10px;
+    padding: 2px 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.details {
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.oculto { display: none; }
+.selecionado { display: block; }
+
+
+.card .card-img {
+    width: 350px;
+    height: 350px;
+    margin-bottom: 20px;
+}
+
+.card img {
+    max-height: 100%;
+    border-radius: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.div-info{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+}
+
+.skills{
+    text-align: left;
+    margin-right: 5%;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    padding: 80px 30px 50px;
+    margin-top: -70px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.card .card-info h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #6B727A;
+}
+
+.card .status, .skills {
+    padding: 10px 0;
+    width: 280px;
+}
+
+.card .open {
+    display: block;
+}
+
+.type {
+    background-color: #000131;
+}
+
+.contender-slider {
+    display: relative;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 30px 0;
+}
+
+.lista-skills {
+    width: 310px;
+    height: 200px;
+    position: relative;
+}
+
+
+.skills-1 {
+    background-color: #000131;
+}
+
+.skills-2 {
+    background-color: #000131;
+}
+
+.barchart-bar {
+    height: 20px;
+    border-radius: 4px;
+    border: 1px solid #ffffff;
+    margin-top: 10px;
+}
+
+.barchart-rank-1 {
+    background-color: #ff7f0f;
+}
+
+.skills p{
+    margin-left: 5px;
+    text-shadow: #FFFFFF 0px 0px 5px;
+}
+
+#java, #javaType {
+    background-color: #f5740b;
+    color: #000131;
+}
+
+#javaType, #CsharpType, #htmlType, #cssType, #javascriptType, #sqlType, #kotlinType {
+    margin-right: 5px;
+}
+
+#Csharp, #CsharpType {
+    background-color: #1aff40;
+    color: #000131;
+}
+
+#html, #htmlType {
+    background-color: #f5ab0b;
+    color: #000131;
+}
+
+#css, #cssType {
+    background-color: #113cff;
+    color: #000131;
+}   
+
+#javascript, #javascriptType {
+    background-color: #fffb00;
+    color: #000131;
+}
+
+#sql, #sqlType {
+    background-color: #00b4ab;
+    color: #000131;
+}
+
+#kotlin, #kotlinType {
+    background-color: #7b00b4;
+    color: #000131;
+}
+
+#flutter, #flutterType {
+    background-color: #5a9cff;
+    color: #000131;
+}
+
+#javaType:hover {
+    background-color: #f5740b;
+    box-shadow: #f5740b 0px 0px 15px;
+}
+
+#CsharpType:hover {
+    background-color: #1aff40;
+    box-shadow: #1aff40 0px 0px 15px;
+}
+
+#htmlType:hover {
+    background-color: #f5ab0b;
+    box-shadow: #f5ab0b 0px 0px 15px;
+}
+
+#cssType:hover {
+    background-color: #113cff;
+    box-shadow: #113cff 0px 0px 15px;
+}
+
+#javascriptType:hover {
+    background-color: #fffb00;
+    box-shadow: #fffb00 0px 0px 15px;
+}
+
+#sqlType:hover {
+    background-color: #00b4ab;
+    box-shadow: #00b4ab 0px 0px 15px;
+}
+
+#kotlinType:hover {
+    background-color: #7b00b4;
+    box-shadow: #7b00b4 0px 0px 15px;
+}
+
+#flutterType:hover {
+    background-color: #75aafa;
+    box-shadow: #75aafa 0px 0px 15px;
+}
+
+.space-button{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.btn-seta {
+    background-image: url('../img/seta.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25px;
+    background-color: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    border: 0;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.btn-seta.btn-voltar {
+    transform: rotateY(180deg);
+}
+
+.space-buttonL {
+    left: 0;
+    margin-right: 55px;
+  }
+  
+.space-buttonR {
+    right: 0;
+    margin-left: 55px;
+  }
+
+.btn-seta:hover {
+    background-color: #8351FE;
+    box-shadow: #fff 0px 0px 20px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    margin-top: 50px;
+}
+.portf{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 50%;
+    max-height: 100%;
+    border-top: 3px solid #79bfea;
+}
+.portf img {
+    margin: 0 auto;
+  }
+
+a#itch {
+    width: 50px;
+    height: 50px;
+}
+
+a#linkedin{
+    width: 80px;
+    height: 80px;
+}
+
+a#playstore{
+    width: 50px;
+    height: 50px;
+}
+
+a#itch:hover{
+    transform: scale(1.2);
+}
+
+a#linkedin:hover{
+    transform: scale(1.2);
+}
+
+a#playstore:hover{
+    transform: scale(1.2);
+}
