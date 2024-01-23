@@ -1,0 +1,63 @@
+/* reset.css */
+
+/* Box sizing reset */
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+/* Margin and padding reset */
+body, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+dl, dd, ol, ul, figure, hr {
+    margin: 0;
+    padding: 0;
+}
+
+/* List reset */
+ol, ul {
+    list-style: none;
+}
+
+/* Heading reset */
+h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+/* Text reset */
+a, b, strong, em, i {
+    text-decoration: none;
+    font-weight: inherit;
+}
+
+/* Font size reset */
+small {
+    font-size: 100%;
+}
+
+/* Form element reset */
+button, input, select, textarea {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Accessibility fix for images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive images */
+img, video, canvas {
+    display: block;
+}
+
+/* Table reset */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}

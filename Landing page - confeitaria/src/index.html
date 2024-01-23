@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Confeitaria Delícia</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav id="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+        <h1 class="doce-heading">Confeitaria Delícia</h1>
+    </header>
+    <main>
+      <section class="about">
+        <h2>Sobre nós</h2>
+        <p>Somos uma confeitaria especializada em doces e bolos artesanais. Utilizamos apenas ingredientes de alta qualidade e nossas receitas são exclusivas.</p>
+      </section>
+      <section class="products">
+        <h2>Nossos produtos</h2>
+        <ul>
+          <li>
+            <img src="./img/cupcakes.jpg" alt="Cupcake">
+            <h3>Cupcake</h3>
+            <p>Delicioso cupcake de baunilha com cobertura de chantilly e cereja.</p>
+          </li>
+          <li>
+            <img src="./img/bolodebrigadeiro.jpg" alt="Bolo">
+            <h3>Bolo de chocolate</h3>
+            <p>Bolo de chocolate com recheio de brigadeiro e cobertura de ganache.</p>
+          </li>
+          <li>
+            <img src="./img/brigadeiro.jpg" alt="Brigadeiro">
+            <h3>Brigadeiro gourmet</h3>
+            <p>Brigadeiro de chocolate belga com granulado de pistache.</p>
+          </li>
+        </ul>
+      </section>
+      <a href="#" class="button-pedido">Faça seu pedido</a>
+      <h2 class="title-depoimentos">Depoimentos</h2>
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner slide-style">
+          <div class="carousel-item active">
+            <p>"Espaço para depoimentos 1"</p>
+              <cite id="cite-name">- Pessoa 1</cite>
+          </div>
+          <div class="carousel-item">
+            <p>"Espaço para depoimentos 2"</p>
+              <cite id="cite-name">- Pessoa 2</cite>
+          </div>
+          <div class="carousel-item">
+            <p>"Espaço para depoimentos 3"</p>
+              <cite id="cite-name">- Pessoa 3</cite>
+          </div>
+        </div>
+      </div>
+      <section class="contact">
+        <h2>Entre em contato</h2>
+        <form>
+          <label for="name">Nome:</label>
+          <input type="text" id="name" name="name" required>
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" required>
+          <label for="message">Mensagem:</label>
+          <textarea id="message" name="message" required></textarea>
+          <button class="button-pedido" type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 Confeitaria Delícia</p>
+        <div class="social-media">
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-youtube"></i></a>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+  </html>
