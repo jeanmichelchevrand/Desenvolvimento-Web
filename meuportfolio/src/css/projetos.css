@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&family=Wix+Madefor+Text:ital,wght@0,400..800;1,400..800&display=swap');
+
+:root{
+    --font__family__teko: "Teko", sans-serif;
+    --font__family__wix: "Wix Madefor Text", sans-serif;
+}
+
+.group__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon__back {
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: auto;
+}
+
+.icon__back:hover {
+    cursor: pointer;
+    transform: scaleX(1.1) translateY(-50%);
+}
+
+#back__button{
+    display: none;
+}
+
+.icon__next {
+    position: absolute;
+    top: 60%;
+    right: 10%;
+    transform: translateY(-50%) scaleX(-1);
+    width: 40px;
+    height: auto;
+}
+
+.icon__next:hover {
+    cursor: pointer;
+    transform: scaleX(1.1) translateY(-50%) scaleX(-1);
+}
+
+#next__button{
+    display: flex;
+}
+
+.card__games, .card__apps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title__projects {
+    font-family: var(--font__family__teko);
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.list__projects{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.style__card__games {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 30px 0 30px;
+    max-width: 300px;
+}
+
+.style__card__games img, .style__card__apps img {
+    width: 50%;
+    height: 50%;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.info__games {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 15px 0 0 0;
+}
+
+.style__card__apps {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 30px 0 30px;
+    max-width: 300px;
+}
+
+.info__apps {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 15px 0 0 0;
+}
+
+#name__game {
+    font-family: var(--font__family__wix);
+    font-size: 20px;
+    color: #fff;
+    line-height: 1.5;
+    font-weight: bold;
+}
+
+#description__game{
+    font-family: var(--font__family__wix);
+    font-size: 14px;
+    color: #000;
+    margin: 10px 0 0 0;
+    line-height: 1.5;
+    word-wrap: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.autores{
+    color: #fff !important;
+}
+
+#first__container{
+    display: flex;
+}
+
+#second__container{
+    display: none;
+}
+
+#third__container{
+    display: none;
+}
+
+/* Estilos para telas pequenas (por exemplo, smartphones) */
+@media only screen and (max-width: 425px) and (max-height: 768px) {
+    .title__projects {
+        font-family: var(--font__family__teko);
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    .icon__back, .icon__next {
+        width: 5%;
+    }
+
+    .style__card__games {
+        margin: 5px 5px 0 5px; /* Ajuste as margens conforme necessário */
+        max-width: 100%; /* Ajuste a largura máxima conforme necessário */
+    }
+    
+    .style__card__games img, .style__card__apps img {
+        width: 50%; /* Mantenha a largura em 50% */
+        height: auto; /* Mantenha a altura automática para manter a proporção */
+        margin: 10px; /* Mantenha a margem em 10px */
+        border-radius: 10px; /* Mantenha o raio do canto em 10px */
+    }
+
+    #description__game {
+        word-wrap: break-word; /* Adiciona quebra de palavras */
+    }
+}
+
+@media only screen and (max-width: 768px) and (max-height: 768px) {
+    .title__projects {
+        font-size: 10px; /* Reduza o tamanho da fonte */
+        margin-bottom: 5px; /* Reduza a margem inferior */
+    }
+
+    .icon__back, .icon__next {
+        width: 5%; /* Ajuste a largura dos ícones */
+    }
+
+    .style__card__games {
+        margin: 5px; /* Ajuste as margens conforme necessário */
+        max-width: 100%; /* Ajuste a largura máxima conforme necessário */
+    }
+    
+    .style__card__games img, .style__card__apps img {
+        width: 60%; /* Reduza a largura das imagens */
+        margin: 5px; /* Reduza a margem das imagens */
+        border-radius: 8px; /* Reduza o raio do canto das imagens */
+    }
+
+    #description__game {
+        word-wrap: break-word; /* Adiciona quebra de palavras */
+    }
+}
+
+@media only screen and (max-width: 1024px) and (max-height: 768px) {
+    .title__projects {
+        font-size: 10px; /* Reduza o tamanho da fonte */
+        margin-bottom: 12px; /* Reduza a margem inferior */
+    }
+
+    .style__card__apps {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        margin: 0 30px 0 30px;
+        max-width: 300px;
+    }
+
+    .icon__back, .icon__next {
+        width: 5%; /* Ajuste a largura dos ícones */
+    }
+
+    .style__card__games {
+        margin: 5px; /* Ajuste as margens conforme necessário */
+        max-width: 100%; /* Ajuste a largura máxima conforme necessário */
+    }
+    
+    .style__card__games img, .style__card__apps img {
+        width: 60%; /* Reduza a largura das imagens */
+        margin: 5px; /* Reduza a margem das imagens */
+        border-radius: 8px; /* Reduza o raio do canto das imagens */
+    }
+
+    #description__game {
+        word-wrap: break-word; /* Adiciona quebra de palavras */
+    }
+}
+
+@media only screen and (max-width: 1440px) and (max-height: 768px) {
+    .title__projects {
+        font-size: 10px; /* Reduza o tamanho da fonte */
+        margin-bottom: 12px; /* Reduza a margem inferior */
+    }
+
+    .style__card__apps {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        margin: 0 30px 0 30px;
+        max-width: 300px;
+    }
+
+    .icon__back, .icon__next {
+        width: 5%; /* Ajuste a largura dos ícones */
+    }
+
+    .style__card__games {
+        margin: 5px; /* Ajuste as margens conforme necessário */
+        max-width: 100%; /* Ajuste a largura máxima conforme necessário */
+    }
+    
+    .style__card__games img, .style__card__apps img {
+        width: 60%; /* Reduza a largura das imagens */
+        margin: 5px; /* Reduza a margem das imagens */
+        border-radius: 8px; /* Reduza o raio do canto das imagens */
+    }
+
+    #description__game {
+        word-wrap: break-word; /* Adiciona quebra de palavras */
+    }
+}
