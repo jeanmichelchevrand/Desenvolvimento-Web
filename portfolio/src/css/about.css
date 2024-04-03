@@ -1,0 +1,286 @@
+:root {
+    --font-family-teko: "Teko", sans-serif;
+    --font-family-wix: "Wix Madefor Text", sans-serif;
+}
+
+.group__aboutme {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav__group{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.title__barskills{
+    font-family: var(--font-family-teko);
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.title__aboutme {
+    font-family: var(--font-family-teko);
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+#aboutmeTitle.initial-shadow,
+#barskillsTitle.initial-shadow {
+    text-shadow: 1px 1px 5px #d558c8;
+}
+
+.title__aboutme a,
+.title__barskills a {
+    cursor: pointer;
+}
+
+.container__aboutme {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.container__skills1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.title__text {
+    font-family: var(--font-family-wix);
+    font-size: 24px;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 3%;
+}
+
+.img__aboutme {
+    margin-right: 20px;
+}
+
+.img__aboutme2 {
+    margin-top: 15px;
+    margin-right: 250px;
+}
+
+.text__aboutme {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+}
+
+.navigation__icons__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.navigation__icons__container a {
+    margin: 0 5px; /* Adicionando margens para as tags <a> */
+}
+
+.icon__back,
+.icon__next {
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: auto;
+}
+
+.icon__back {
+    left: 10px;
+    transform: translateY(-50%);
+}
+
+.icon__next {
+    right: 10px;
+    transform: translateY(-50%) scaleX(-1);
+}
+
+.icon__back:hover{
+    cursor: pointer;
+    transform: scaleX(1.1) translateY(-50%);
+}
+
+.icon__next:hover {
+    cursor: pointer;
+    transform: scaleX(1.1) translateY(-50%) scaleX(-1);
+}
+
+.img__aboutme img, .img__aboutme2 img {
+    border-radius: 10%;
+    width: 200px;
+    height: 350px;
+}
+
+.group__skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height: 300px;
+    margin-left: 15px;
+}
+
+.box__skills {
+    text-align: center;
+    width: 100%;
+}
+
+#title__skills{
+    font-family: var(--font-family-teko);
+    font-size: 24px;
+    color: #fff;
+    text-shadow: 1px 1px 5px #24d292;
+}
+
+.text__skills{
+    font-family: var(--font-family-wix);
+    font-size: 16px;
+    color: #fff;
+}
+
+.box__text_skills {
+    width: 100%;
+    text-align: justify;
+    font-family: var(--font-family-wix);
+    font-size: 14px;
+    color: #000;
+    margin-top: 25px;
+    line-height: 1.5;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#first__container{
+    display: flex;
+}
+
+#second__container{
+    display: none;
+}
+
+#third__container{
+    display: none;
+}
+
+#container__about{
+    display: flex;
+}
+
+#container__mineskills{
+    display: none;
+}
+
+.container__skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height: 300px;
+    margin-left: 15px;
+}
+
+.skills{
+    text-align: left;
+    margin-right: 5%;
+}
+
+.class-h3{
+    font-family: var(--font-family-teko);
+}
+
+.lista-skills {
+    width: 310px;
+    height: 200px;
+    position: relative;
+}
+
+
+.barchart-bar {
+    height: 20px;
+    border-radius: 4px;
+    border: 1px solid #ffffff;
+    margin-top: 10px;
+}
+
+#text__skill{
+    margin-left: 5px;
+    text-shadow: #FFFFFF 0px 0px 5px;
+}
+
+.barchart-rank-1 {
+    background-color: #ff7f0f;
+}
+
+li{
+    list-style: none;
+}
+
+#html, #htmlType {
+    background-color: #f5ab0b;
+    color: #000131;
+}
+
+#css, #cssType {
+    background-color: #113cff;
+    color: #000131;
+}
+
+#javascript, #javascriptType {
+    background-color: #fffb00;
+    color: #000131;
+}
+
+#php, #phpType {
+    background-color: #8da2ff;
+    color: #000131;
+}
+
+#csharp, #csharpType {
+    background-color: #1aff40;
+    color: #000131;
+}
+
+#java, #javaType {
+    background-color: #f5740b;
+    color: #000131;
+}
+
+#sql, #sqlType {
+    background-color: #00b4ab;
+    color: #000131;
+}
+
+#kotlin, #kotlinType {
+    background-color: #7b00b4;
+    color: #000131;
+}
+
+
+
+@keyframes circle-in-hesitate {
+    0% {
+      clip-path: circle(0%);
+      /*background-color: #d558c8;*/
+    }
+    40% {
+      clip-path: circle(40%);
+      /*background-color: #24d292;*/
+    }
+    100% {
+      clip-path: circle(125%);
+    }
+  }
+  
+  [transition-style="in:circle:hesitate"] {
+    animation: 5s cubic-bezier(.25, 1, .30, 1) circle-in-hesitate both;
+  }
