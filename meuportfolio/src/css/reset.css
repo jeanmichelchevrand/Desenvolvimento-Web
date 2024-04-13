@@ -1,5 +1,9 @@
 /* Reset CSS Simples */
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 /* Removendo margens e preenchimentos padrão */
 html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, img, ul, ol, li, form, table, tr, td {
     margin: 0;

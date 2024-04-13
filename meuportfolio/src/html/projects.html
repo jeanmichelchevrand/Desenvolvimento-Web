@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="src/css/stylebase.css">
-    <link rel="stylesheet" href="src/css/inicial.css">
-    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="../css/stylebase.css">
+    <link rel="stylesheet" href="../css/projectstyle.css">
+    <link rel="stylesheet" href="../css/reset.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
-    
-    <title>Inicial</title>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&family=Wix+Madefor+Text:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+
+    <title>Projetos</title>
 </head>
 <body>
     <div class="div__background">
@@ -29,35 +30,92 @@
                     <ul id="ul__menu">
                         <li><a href="../../index.html">Inicial</a></li>
                         <li><a href="src/html/projects.html">Projetos</a></li>
-                        <li><a href="src/html/about.html">Sobre</a></li>
+                        <li><a href="about.html">Sobre</a></li>
                     </ul>
                 </container>
             </nav>
                 <container class="container__division"></container>
         </header>
     <main>
-        <container class="text__about__site">
-            <div class="glass__background"></div>
-            <div class="title__about__site">
-                <h3>Bem-vindo ao meu Portfolio!</h3>
-            </div>
-            <div class="description__about__site">
-                <p>Explore o meu mundo criativo e profissional aqui, onde cada projeto conta uma história única. Este espaço é dedicado a apresentar uma amostra do meu trabalho e habilidades na área de programação.</p>
-                <p id="frase">Cada projeto é mais do que um simples conjunto de linhas de código.</p>
-            </div>
+        <container class="group__card">
+            <a onclick="showBackContainer()"><img src="../img/arrow.png" alt="" class="icon__back" id="back__button"></a>
+            <container class="card__games" id="first__container">
+                <div class="title__projects">
+                    <h1>Games</h1>
+                </div>
+                <div class="list__row">
+                    <div class="list__projects">
+                        <div class="style__card__games">
+                            <img src="../img/space_in_battle.png" alt="Battle In Space">
+                            <div class="info__games">
+                                <p id="name__game">Battle In Space</p>
+                                <p id="description__game">Neste jogo, os jogadores são lançados em uma intensa batalha no espaço sideral, onde devem pilotar suas naves e enfrentar inúmeras ameaças.</p>
+                            </div>
+                        </div>
+                        <div class="style__card__games">
+                            <img src="../img/bat_flies.png" alt="Bat Flies">
+                            <div class="info__games">
+                                <p id="name__game">Bat Flies</p>
+                                <p id="description__game">É um emocionante jogo no estilo infinite run que coloca os jogadores no controle de um ágil morcego em busca de aventuras noturnas.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list__projects" id="row__two">
+                        <div class="style__card__games">
+                            <img src="../img/ship_vs_asteroids.png" alt="Ship vs Asteroids">
+                            <div class="info__games">
+                                <p id="name__game">Ship vs Asteroids</p>
+                                <p id="description__game">É um eletrizante jogo de ação espacial que coloca os jogadores no comando de uma espaçonave em uma jornada épica pelo universo.</p>
+                            </div>
+                        </div>
+                        <div class="style__card__games">
+                            <img src="../img/pong.png" alt="Pong">
+                            <div class="info__games">
+                                <p id="name__game">Pong</p>
+                                <p id="description__game">Nesta versão renovada, os jogadores são transportados de volta aos primórdios dos videogames em partidas de pingue-pongue virtual.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </container>
+            <container class="card__games" id="second__container">
+                <div class="title__projects">
+                    <h1>Apps</h1>
+                </div>
+                <div class="list__projects">
+                <div class="style__card__apps">
+                    <img src="../img/rolldice.png" alt="Roll Dice">
+                    <div class="info__apps">
+                        <p id="name__game">Roll Dice</p>
+                        <p id="description__game">O aplicativo é uma ferramenta útil para jogadores de RPG de mesa que precisam rolar dados de forma rápida e conveniente.</p>
+                    </div>
+                </div>
+                <div class="style__card__apps">
+                    <img src="../img/tip.png" alt="Tip">
+                    <div class="info__apps">
+                        <p id="name__game">Tip</p>
+                        <p id="description__game">Um aplicativo de gorjeta é uma ferramenta que ajuda os usuários a calcular e dar gorjetas em restaurantes, bares e outros serviços de atendimento ao cliente.</p>
+                    </div>
+                </div>
+                </div>
+            </container>
+            <container class="card__games" id="third__container">
+                <div class="title__projects">
+                    <h1>GameJams</h1>
+                </div>
+                <div class="list__projects">
+                <div class="style__card__apps">
+                    <img src="../img/bubble_attack.png" alt="Roll Dice">
+                    <div class="info__apps">
+                        <p id="name__game">Bubble Attack</p>
+                        <p id="description__game">Esse é um jogo desenvolvido em minha primeira GameJam com outros três participantes.</p>
+                        <p id="description__game" class="autores">Jean Michel, Allan Fonseca e José Ivay.</p>
+                    </div>
+                </div>
+                </div>
+            </container>
+            <a onclick="showNextContainer()"><img src="../img/arrow.png" alt="" class="icon__next" id="next__button"></a>
         </container>
-
-        <div class="cards__view">
-            <div class="card__one" id="image__card">
-                <img src="src/img/space_in_battle.png">
-            </div>
-            <div class="card__two" id="image__card">
-                <img src="src/img/bat_flies.png">
-            </div>
-            <div class="card__three" id="image__card">
-                <img src="src/img/ship_vs_asteroids.png">
-            </div>
-        </div>
     </main>
     <footer>
         <container class="container__division"></container>
@@ -95,12 +153,14 @@
         </div>
         <div class="ul__footer">
             <ul>
-                <li><a href="index.html">Inicial</a></li>
-                <li><a href="src/html/about.html">Sobre</a></li>
+                <li><a href="../../index.html">Inicial</a></li>
+                <li><a href="about.html">Sobre</a></li>
             </ul>
         </div>
-        <p>&copy; 2024 - JmvCodes - Todos os direitos reservados.</p>
+        <p>&copy; 2024 - Todos os direitos reservados.</p>
     </footer>
     </div>
+
+    <script src="../js/effectContainer.js"></script>
 </body>
 </html>

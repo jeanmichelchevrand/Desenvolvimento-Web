@@ -45,6 +45,7 @@ function showBackContainer(){
 function checkContainer(){
     if (currentContainer === 1){
         document.getElementById("first__container").style.display = "flex";
+        document.getElementById("first__container").style.height = "300px";
         document.getElementById("second__container").style.display = "none";
         document.getElementById("third__container").style.display = "none";
 
@@ -53,6 +54,7 @@ function checkContainer(){
     }else if (currentContainer === 2){
         document.getElementById("first__container").style.display = "none";
         document.getElementById("second__container").style.display = "flex";
+        document.getElementById("second__container").style.height = "300px";
         document.getElementById("third__container").style.display = "none";
 
         document.getElementById("back__button").style.display = "flex";
@@ -61,6 +63,7 @@ function checkContainer(){
         document.getElementById("first__container").style.display = "none";
         document.getElementById("second__container").style.display = "none";
         document.getElementById("third__container").style.display = "flex";
+        document.getElementById("third__container").style.height = "300px";
 
         document.getElementById("back__button").style.display = "flex";
         document.getElementById("next__button").style.display = "none";

@@ -1,3 +1,7 @@
+body{
+    height: auto !important;
+}
+
 .text__about__site{
     display: flex;
     flex-direction: column;
@@ -11,9 +15,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 60%;
+    width: 100%;
     position: absolute;
-    top: 45%;
+    top: 30%;
+    padding-left: 50%;
     right: 0;
 }
 
